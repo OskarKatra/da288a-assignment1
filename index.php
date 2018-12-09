@@ -23,7 +23,11 @@
             <meta name="author" content="">
             <title>DA288A-VT18 Assignment 1</title>
             <!-- Bootstrap core CSS -->
+<<<<<<< HEAD
             <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+=======
+            <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+>>>>>>> release/1.0.0
             <!-- Custom styles for this template -->
             <link href="css/style.css" rel="stylesheet">
           </head>

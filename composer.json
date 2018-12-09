@@ -1,0 +1,15 @@
+{
+    "name": "mau/da288a-assignent1",
+    "type": "library",
+    "license": "BSD",
+    "authors": [
+        {
+            "name": "Oskar Katra",
+            "email": "oskar1.katra@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "monolog/monolog": "^1.24"
+    }
+}
