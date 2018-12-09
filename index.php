@@ -1,5 +1,17 @@
     <?php
+    require("vendor/autoload.php");
+    require_once("./Api.php");
+    require_once("./UsageLogger.php");
+    require_once ("./Unicorn.php");
 
+    $api = new Api();
+    $usageLogger = new UsageLogger('log');
+
+    $param = $_GET["id"];
+
+    $data = $api -> getData($param);
+
+    $usageLogger -> log(empty($param) ? 'All' : $param);
 
     ?>
         <!DOCTYPE html>
@@ -11,7 +23,7 @@
             <meta name="author" content="">
             <title>DA288A-VT18 Assignment 1</title>
             <!-- Bootstrap core CSS -->
-            <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+            <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
             <!-- Custom styles for this template -->
             <link href="css/style.css" rel="stylesheet">
           </head>
@@ -32,6 +44,10 @@
                 <div class="col-lg-4">
                     <form action = '/'class="form-inline" method="GET">
                         <input class="form-control mr-sm-2" type="text" name="id" id="id" placeholder="Sök" aria-label="Search"
+                               value=
+                               "<?php
+                               echo !empty($_GET['id']) ? $_GET['id'] : '';
+                               ?>">
                         <button class="btn aqua-gradient btn-rounded btn-sm my-0" type="submit">Sök</button>
                         <a href="/" class="btn aqua-gradient btn-rounded btn-sm my-0">
                             Visa Alla
@@ -42,7 +58,21 @@
                 </div>
                 <hr>
               <div class="row text-center">
+                  <?php
 
+                  if(count($data)>1){
+                      foreach($data as $item){
+                          echo $item -> printUnicornSimple();
+                      }
+                  }
+
+                  if(count($data)===1){
+                      foreach ($data as $item){
+                          echo $item -> printUnicornDetailed();
+                      }
+                  }
+
+                  ?>
               </div>
             </div>
             <script src="vendor/jquery/jquery.min.js"></script>
