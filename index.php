@@ -23,7 +23,7 @@
             <meta name="author" content="">
             <title>DA288A-VT18 Assignment 1</title>
             <!-- Bootstrap core CSS -->
-            <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+            <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
             <!-- Custom styles for this template -->
             <link href="css/style.css" rel="stylesheet">
           </head>
@@ -75,7 +75,6 @@
                   ?>
               </div>
             </div>
-            <script src="vendor/jquery/jquery.min.js"></script>
-            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
           </body>
         </html>
