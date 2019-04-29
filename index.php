@@ -23,16 +23,7 @@
             <meta name="author" content="">
             <title>DA288A-VT18 Assignment 1</title>
             <!-- Bootstrap core CSS -->
-<<<<<<< HEAD
-            <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-=======
-<<<<<<< HEAD
-            <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
->>>>>>> release/1.0.0
-=======
             <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
->>>>>>> 5b792c6... fix bootstrap issue, use cdn
->>>>>>> hotfix/fix_bootstrap_path
             <!-- Custom styles for this template -->
             <link href="css/style.css" rel="stylesheet">
           </head>
