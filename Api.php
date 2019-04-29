@@ -18,11 +18,16 @@
         function getData($param){
             $client = new Client(['headers' => self::headers, 'base_uri' => self::base_uri]);
 
-            $res = $client->request('GET', $param);
-            $data = json_decode($res->getBody());
-            $unicorn_data = self::formatData($data);
+            try {
+                $res = $client->request('GET', $param);
+                $data = json_decode($res->getBody());
+                $unicorn_data = self::formatData($data);
+    
+                return $unicorn_data;
+            } catch (Exception $e) {
+                return 'Not found';
+            }
 
-            return $unicorn_data;
         }
 
         /**
