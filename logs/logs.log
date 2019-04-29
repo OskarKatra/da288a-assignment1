@@ -1,5 +1,14 @@
+<<<<<<< HEAD
 [2018-12-09 19:17:47] log.INFO: id: All [] []
 [2018-12-09 19:17:50] log.INFO: id: All [] []
 [2018-12-09 19:18:17] log.INFO: id: All [] []
 [2018-12-09 19:18:19] log.INFO: id: 19 [] []
 [2018-12-09 19:18:24] log.INFO: id: 2 [] []
+=======
+[2019-04-29 11:48:56] log.INFO: id: All [] []
+[2019-04-29 11:49:13] log.INFO: id: All [] []
+[2019-04-29 11:49:22] log.INFO: id: All [] []
+[2019-04-29 11:50:45] log.INFO: id: All [] []
+[2019-04-29 11:51:43] log.INFO: id: All [] []
+[2019-04-29 11:51:45] log.INFO: id: All [] []
+>>>>>>> hotfix/fix_bootstrap_path
