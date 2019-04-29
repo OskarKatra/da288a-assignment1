@@ -60,16 +60,20 @@
               <div class="row text-center">
                   <?php
 
-                  if(count($data)>1){
+                  if(count($data)>1 && !is_string($data)){
                       foreach($data as $item){
                           echo $item -> printUnicornSimple();
                       }
                   }
 
-                  if(count($data)===1){
+                  if(count($data)===1 && !is_string($data)){
                       foreach ($data as $item){
                           echo $item -> printUnicornDetailed();
                       }
+                  }
+
+                  if(is_string($data)){
+                    echo $data;
                   }
 
                   ?>
